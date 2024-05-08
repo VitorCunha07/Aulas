@@ -1,0 +1,18 @@
+Token- É um texto de autenticação. Diminuiçao de um email e senha, para facilitar o acesso de um usuário. Um token pode expirar, deixando de ser válido. Deve ser única. É ideal usar o token ao invés de email e senha, devido a ser mais seguro e prático. Muitas vezes, esse token nn é visto nem mesmo pelo usuário, mas ele está lá.
+Quando você troca uma senha, o seu token também mudaria, devido ao fato do token ser derivado da senha e do email.  
+
+OAUTH- É um padrão de comunicação que necessita de uma autenticação muito dificil, necessitando de dados de uma empresa. Será estudado melhor futuramente. 
+
+Sessões por usuário- Uma sessão pode ser iniciada e finalizada. Leva o nome de "sessão" devido a ser um período. Alguns sites e aplicativos não permitem dois dispositivos conectados ao mesmo tempo, então ao logar em um, o outro tem a sessão finalizada. Uma sessão deve ser iniciada utilizando um token. 
+
+Autenticação- Para utilizar uma API, é necessário uma autenticação, que normalmente é feita com a utilização de um token. 
+
+Re-Autenticação- Quando um token expira, alguns sites mandam automaticamente um novo token, requistado pelo token anterior, para que o usuário não seja desconectado da sua conta. O token de re-autenticação é um derivado do antigo token de autenticação, possuindo semelhanças. 
+
+Head- O head é "a parte que não é vista". Um token, deve sempre ficar no head, e não no body, pois o que está no body é visto, e o que está no head só é visto pelo leitor do site. Quando enviamos um request, ele é dividido em "body" e "head". Atualmente, a leitura do head (para verificar a autenticação) é feita de forma automática. 
+
+Status HTTP- São os números que o navegador retorna, dizendo o que foi que aconteceu. Os códigos de erro vão do número 1 até os números 500. Cada um quer dizer algo diferente, a maioria são de erros, porém alguns querem dizer que ocorreu tudo certo. 
+
+Response- Traz o status HTTP, podendo ser uma resposta positiva ou negativa. Independente do modo HTTP usado, o servidor irá mandar um response.
+
+PUT e PATCH- O PUT é uma atualização total. O PATCH é uma atualização parcial.

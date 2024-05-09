@@ -1,0 +1,20 @@
+como alterar um campo em sql?
+
+UPDATE materias_alunos SET nota_prova_bimestral = 6;
+
+
+SELECT aprovado FROM materias_alunos;
+
+
+UPDATE materias_alunos 
+SET aprovado = CASE WHEN ((nota_prova_bimestral*5) + (nota_prova_mensal*3) + nota_atitudinal + nota_licoes)/10 >= 6 THEN TRUE ELSE FALSE END;
+
+
+ALTER TABLE materias_alunos 
+ALTER COLUMN nota_prova_mensal TYPE DECIMAL(4,2);
+ALTER TABLE materias_alunos 
+ALTER COLUMN nota_prova_bimestral TYPE DECIMAL(4,2);
+ALTER TABLE materias_alunos 
+ALTER COLUMN nota_atitudinal TYPE DECIMAL(4,2);
+ALTER TABLE materias_alunos 
+ALTER COLUMN nota_licoes TYPE DECIMAL(4,2);

@@ -1,0 +1,24 @@
+=Rotas=
+
+"link.cloud/users/3" é dividido em duas partes:
+link.cloud --> base url
+users/3 --> endpoint
+
+Existem váriaveis que podedm ser mudadas e variaveis que não podem ser mudadas. Essas variaveis que não podem ser mudadas podem ser criadas em um arquivo separado "escondidos".
+
+=Métodos=
+
+A base url pode ser substituida por uma variável, no caso foi usada BU.
+
+BU/users --> Iria trazer todos os users
+BU/users/5 --> Iria pegar o 5° user 
+
+O endpoint muda de acordo com o que queremos.
+Um padrão recomendado é não usar números na url quando ela for exposta, usar códigos para evitar problemas, por exemplo:
+BU/users/x13a-856 
+
+-Segurança=
+
+Para manter a segurança, devemos fazer algumas requisições, que não podem ser demais para evitar problemas mas tem que exitir para que haja segurança. Por exemplo, não faz sentido um aluno ter acesso a uma prova que deveria ser acessada apenas por um prof, mas também não faz sentido uma prova estar relacionada apenas a um prof, pois existe a coordenação e outros funcionários que podem precisar acessar essa prova. 
+Essas requisições são chamadas de "requests". 
+Existem o header e o body. NO header são passadas as informações que não são visiveis, enquanto no body as informações são mostradas.

@@ -1,0 +1,13 @@
+Laravel Sail-- É uma forma de baixar tudo que precisa para usar o Laravel. Para instalar no linux. é muito mais fácil, utilizando apenas 3 comandos.
+
+Servidores-- Para trabalhar com servidores, aé de conhecimento em programção, também é necessario conhecimento em hardware e banco de dados. Um servidor em Lnux não "coversa" com um servidor em windows.
+
+Docker-- Cria um container com aquilo que quer rodar, tudo de uma vez. Laravel sail faz isso, porém em ralação ao Laravel. Docker só funciona no linux.
+
+-->Habilitar virtualização na bios
+-->Baixar Powershell
+-->Deixar Powershell na versão WSLA2
+-->Baixar uma distro de linux, Ubunto 20
+-->Seguir tutorial de Linux
+
+Comando-- sudo service docker start

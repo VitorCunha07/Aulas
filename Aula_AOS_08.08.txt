@@ -1,0 +1,8 @@
+		--Monolitos--
+	A Amazon foi criada com a utilização de um monolito.
+	Quando é utilizado API, basicamente o projeto está dividido em mais de uma parte, enquanto um monolíto é 
+um projeto único. Tudo está num mesmo pacote, e isso é "ruim", por isso o Laravan foi criado. 
+	Ao utilizar uma API, a venda do produto fica mais variavel, pois um site e uma API (por exemplo) podem ser vendidos de forma separada
+
+
+
